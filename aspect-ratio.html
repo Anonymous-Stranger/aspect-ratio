@@ -1,0 +1,82 @@
+<!--
+
+  <aspect-ratio>
+  author: Ag
+
+  A polymer component whose height auto-adjusts to maintain a given aspect
+  ratio with its width.
+
+-->
+
+<link rel="import" href="../polymer/polymer.html"/>
+
+<dom-module id="aspect-ratio">
+  
+  <template>
+    
+    <style>
+      
+      :host {
+        display: inline-block;
+        position: relative;
+      }
+
+      :host::before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: var(--aspect-ratio);
+      }
+
+      #content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+    </style>
+
+    <div id="content">
+      <content></content>
+    </div>
+
+  </template>
+
+  <script>
+    
+    Polymer({
+
+      is: 'aspect-ratio',
+
+      properties: {
+
+        /**
+         * The aspect width.
+         * @type {Number}
+         */
+        w: Number,
+
+        /**
+         * The aspect height.
+         * @type {Number}
+         */
+        h: Number
+
+      },
+
+      observers: [
+        '_setRatio(w, h)'
+      ],
+
+      _setRatio: function(w, h) {
+        this.customStyle['--aspect-ratio'] = (100 * h / w) + '%';
+        this.updateStyles();
+      }
+
+    });
+
+  </script>
+
+</dom-module>

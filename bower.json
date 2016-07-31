@@ -1,0 +1,28 @@
+{
+  "name": "aspect-ratio",
+  "homepage": "https://github.com/Anonymous-Stranger/aspect-ratio",
+  "authors": [
+    "Anonymous-Stranger <akashgaonkar@gmail.com>"
+  ],
+  "description": "A polymer component whose height auto-adjusts to maintain a given aspect
+  ratio with its width.",
+  "main": "aspect-ratio.html",
+  "keywords": [
+    "aspect",
+    "ratio",
+    "polymer",
+    "web-components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "../",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.6.0"
+  }
+}

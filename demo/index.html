@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- author: Ag -->
+
+<html>
+  
+  <head>
+    
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Aspect Ratio Demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+
+    <link rel="import" href="../aspect-ratio.html"/>
+
+    <style>
+
+      body {
+        font-family: sans-serif;
+        padding: 2rem;
+      }
+
+      #examples {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      aspect-ratio {
+        width: 256px;
+        max-width: 100%;
+        background-color: #232323;
+        color: #efefef;
+        margin: 2rem;
+      }
+
+      aspect-ratio .desc {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 3rem;
+      }
+
+      @media screen and (max-width: 320px) {
+        aspect-ratio .desc { font-size: 2rem; }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h2> Each box is the same width. </h2>
+
+    <div id='examples'>
+
+      <aspect-ratio w="1" h="1">
+        <div class="desc"> 1 : 1 </div>
+      </aspect-ratio>
+
+      <aspect-ratio w="2" h="1">
+        <div class="desc"> 2 : 1 </div>
+      </aspect-ratio>
+
+      <aspect-ratio w="4" h="3">
+        <div class="desc"> 4 : 3 </div>
+      </aspect-ratio>
+
+      <aspect-ratio w="16" h="9">
+        <div class="desc"> 16 : 9 </div>
+      </aspect-ratio>
+
+      <aspect-ratio w="1.618" h="1">
+        <div class="desc"> &phi; : 1 </div>
+      </aspect-ratio>
+
+    </div>
+
+  </body>
+
+</html>
