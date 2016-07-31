@@ -4,8 +4,7 @@
   "authors": [
     "Anonymous-Stranger <akashgaonkar@gmail.com>"
   ],
-  "description": "A polymer component whose height auto-adjusts to maintain a given aspect
-  ratio with its width.",
+  "description": "A polymer component whose height auto-adjusts to maintain a given aspect ratio with its width.",
   "main": "aspect-ratio.html",
   "keywords": [
     "aspect",
