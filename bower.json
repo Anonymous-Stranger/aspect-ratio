@@ -1,11 +1,11 @@
 {
-  "name": "aspect-ratio",
-  "homepage": "https://github.com/Anonymous-Stranger/aspect-ratio",
+  "name": "aspect-ratio-container",
+  "homepage": "https://github.com/Anonymous-Stranger/aspect-ratio-container",
   "authors": [
     "Anonymous-Stranger <akashgaonkar@gmail.com>"
   ],
   "description": "A polymer component whose height auto-adjusts to maintain a given aspect ratio with its width.",
-  "main": "aspect-ratio.html",
+  "main": "aspect-ratio-container.html",
   "keywords": [
     "aspect",
     "ratio",

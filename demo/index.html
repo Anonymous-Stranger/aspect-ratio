@@ -12,7 +12,7 @@
 
     <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
 
-    <link rel="import" href="../aspect-ratio.html"/>
+    <link rel="import" href="../aspect-ratio-container.html"/>
 
     <style>
 
@@ -29,7 +29,7 @@
         flex-wrap: wrap;
       }
 
-      aspect-ratio {
+      aspect-ratio-container {
         width: 256px;
         max-width: 100%;
         background-color: #232323;
@@ -37,7 +37,7 @@
         margin: 2rem;
       }
 
-      aspect-ratio .desc {
+      aspect-ratio-container .desc {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -65,25 +65,25 @@
 
     <div id='examples'>
 
-      <aspect-ratio w="1" h="1">
+      <aspect-ratio-container w="1" h="1">
         <div class="desc"> 1 : 1 </div>
-      </aspect-ratio>
+      </aspect-ratio-container>
 
-      <aspect-ratio w="2" h="1">
+      <aspect-ratio-container w="2" h="1">
         <div class="desc"> 2 : 1 </div>
-      </aspect-ratio>
+      </aspect-ratio-container>
 
-      <aspect-ratio w="4" h="3">
+      <aspect-ratio-container w="4" h="3">
         <div class="desc"> 4 : 3 </div>
-      </aspect-ratio>
+      </aspect-ratio-container>
 
-      <aspect-ratio w="16" h="9">
+      <aspect-ratio-container w="16" h="9">
         <div class="desc"> 16 : 9 </div>
-      </aspect-ratio>
+      </aspect-ratio-container>
 
-      <aspect-ratio w="1.618" h="1">
+      <aspect-ratio-container w="1.618" h="1">
         <div class="desc"> &phi; : 1 </div>
-      </aspect-ratio>
+      </aspect-ratio-container>
 
     </div>
 
